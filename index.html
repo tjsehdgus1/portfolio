@@ -5,18 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>선동현 | IT 기획·PM · AI 활용 개발 포트폴리오</title>
   <meta name="description" content="공공·기관 웹 플랫폼과 R&D 과제를 기획·관리해 온 6년 10개월 차 IT 기획자이자, Claude Code로 직접 서비스를 만드는 선동현의 포트폴리오">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
 
-  <header>
+<nav class="topnav" aria-label="섹션 이동">
+  <div class="topnav-inner">
+    <a class="brand" href="#top">선동현</a>
+    <ul>
+      <li><a href="#about">소개</a></li>
+      <li><a href="#skills">역량</a></li>
+      <li><a href="#career">경력</a></li>
+      <li><a href="#highlights">대표 프로젝트</a></li>
+      <li><a href="#claude-projects">AI 프로젝트</a></li>
+      <li><a href="#credentials">자격</a></li>
+      <li><a href="#all-projects">전체 목록</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+
+  <header class="hero">
+    <p class="eyebrow">IT 기획·PM · AI 활용 웹 개발</p>
     <h1>선동현</h1>
-    <p class="role">IT 기획·PM · AI 활용 웹 개발 (경력 6년 10개월)</p>
-    <p class="links">
-      <a href="https://github.com/tjsehdgus1">GitHub</a>
-      <a href="mailto:tjsehdgus1100@gmail.com">tjsehdgus1100@gmail.com</a>
+    <p class="pitch">공공·기관 웹 플랫폼과 정부 R&amp;D 과제를 기획하고 끝까지 이끌어 온 기획자입니다.<br>
+      이제는 기획한 것을 Claude Code로 직접 만들어 검증합니다.</p>
+    <p class="cta">
+      <a class="btn primary" href="mailto:tjsehdgus1100@gmail.com">이메일 보내기</a>
+      <a class="btn" href="https://github.com/tjsehdgus1">GitHub</a>
     </p>
+    <dl class="stats">
+      <div><dt>경력</dt><dd>6년 10개월</dd></div>
+      <div><dt>참여 사업</dt><dd>124건</dd></div>
+      <div><dt>AI로 만든 프로젝트</dt><dd>18개</dd></div>
+      <div><dt>IT 자격</dt><dd>3종</dd></div>
+    </dl>
   </header>
 
   <section id="about">
@@ -35,6 +61,7 @@
 
   <section id="skills">
     <h2>역량</h2>
+    <div class="grid">
     <div class="card">
       <h3>기획·PM</h3>
       <ul class="tags">
@@ -52,6 +79,7 @@
         <li>Prisma</li><li>Drizzle</li><li>Vitest</li><li>Expo(React Native)</li><li>Express</li><li>Docker</li><li>Vercel</li><li>AWS</li><li>Python</li><li>Figma</li>
       </ul>
     </div>
+    </div>
   </section>
 
   <section id="career">
@@ -59,19 +87,19 @@
     <div class="card">
       <h3>(주)아이웍스</h3>
       <p class="meta">2019.10 ~ 2026.07 (6년 10개월) · IT 기획·프로젝트 관리</p>
-      <table>
-        <tr><th>기간</th><th>부서 / 직위</th></tr>
-        <tr><td>2025.04 ~ 2026.07</td><td>융합기술연구소 / 과장</td></tr>
-        <tr><td>2022.05 ~ 2025.04</td><td>융합기술연구소 / 대리</td></tr>
-        <tr><td>2022.01 ~ 2022.05</td><td>융합기술연구소 / 주임</td></tr>
-        <tr><td>2020.04 ~ 2022.01</td><td>기업부설연구소 / 주임</td></tr>
-        <tr><td>2019.10 ~ 2020.04</td><td>기업부설연구소 / 사원</td></tr>
-      </table>
+      <ol class="timeline">
+        <li><span class="when">2025.04 ~ 2026.07</span><span class="what">융합기술연구소 · <strong>과장</strong></span></li>
+        <li><span class="when">2022.05 ~ 2025.04</span><span class="what">융합기술연구소 · 대리</span></li>
+        <li><span class="when">2022.01 ~ 2022.05</span><span class="what">융합기술연구소 · 주임</span></li>
+        <li><span class="when">2020.04 ~ 2022.01</span><span class="what">기업부설연구소 · 주임</span></li>
+        <li><span class="when">2019.10 ~ 2020.04</span><span class="what">기업부설연구소 · 사원</span></li>
+      </ol>
     </div>
   </section>
 
   <section id="highlights">
     <h2>대표 프로젝트</h2>
+    <div class="grid">
 
     <div class="card">
       <h3>데이터기반 지역기업 혁신성장 플랫폼</h3>
@@ -120,7 +148,7 @@
       <p>요구사항이 명확하지 않고 발주처 담당자가 여러 번 바뀌는 상황에서, 기존 시스템 벤치마킹과
         다른 PMS를 써 본 경험으로 기획안을 먼저 제시하고 여러 차례 회의로 요구사항을 구체화했습니다.
         다른 사업과 병행하며 구축을 마무리했고, 사용자 매뉴얼 사이트도 만들었습니다.</p>
-      <p class="meta"><a href="https://pms-manual.vercel.app">PMS 매뉴얼</a></p>
+      <p class="card-links"><a class="link" href="https://pms-manual.vercel.app" target="_blank" rel="noopener">PMS 매뉴얼 보기 ↗</a></p>
     </div>
 
     <div class="card">
@@ -144,13 +172,15 @@
       <p>순천문화예술지원 시스템, 금융상담시스템(전라남도 금융복지상담센터), 공유공간 예약관리 시스템,
         여행자 안심거리 전광판 관리시스템, 시정자료 DB 구축, 여수지방해양수산청 정보시스템 통합 유지관리 등을 수행했습니다.</p>
     </div>
+      </div>
   </section>
 
   <section id="claude-projects">
     <h2>Claude Code로 만든 프로젝트 (2026)</h2>
     <p class="meta">AI 코딩 도구 Claude Code와 함께 기획·설계·구현·배포까지 직접 진행한 프로젝트입니다.</p>
 
-    <h3>업무 시스템</h3>
+    <h3 class="group">업무 시스템</h3>
+    <div class="grid">
 
     <div class="card">
       <h3>아이웍스 인트라넷</h3>
@@ -159,7 +189,9 @@
       <ul class="tags"><li>Next.js 16</li><li>TypeScript</li><li>Neon(PostgreSQL)</li></ul>
     </div>
 
-    <h3>개인 프로젝트 — 홈페이지·앱·업무 도구</h3>
+    </div>
+    <h3 class="group">개인 프로젝트 — 홈페이지·앱·업무 도구</h3>
+    <div class="grid">
 
     <div class="card">
       <h3>축제 홈페이지</h3>
@@ -190,14 +222,16 @@
       <ul class="tags"><li>Next.js 16</li><li>Drizzle</li><li>PostgreSQL</li><li>Vitest</li></ul>
     </div>
 
-    <h3>개인 프로젝트 — 생활·공동체 서비스</h3>
+    </div>
+    <h3 class="group">개인 프로젝트 — 생활·공동체 서비스</h3>
+    <div class="grid">
 
     <div class="card">
       <h3>순천순동교회 홈페이지</h3>
       <p class="meta">2026.03 ~</p>
       <p>예배 안내·행사일정·공지사항과 가입 승인제 회원 관리, 부서 게시판, 주보 PDF 뷰어를 갖춘 교회 홈페이지입니다.</p>
       <ul class="tags"><li>Next.js 16</li><li>Supabase</li><li>Tailwind CSS</li></ul>
-      <p class="meta"><a href="https://soondongchurch.vercel.app">서비스</a></p>
+      <p class="card-links"><a class="link" href="https://soondongchurch.vercel.app" target="_blank" rel="noopener">서비스 보기 ↗</a></p>
     </div>
 
     <div class="card">
@@ -205,7 +239,7 @@
       <p class="meta">2026.05 ~</p>
       <p>회원 인증, QT 나눔(댓글·대댓글·좋아요), 뉴스레터, 이미지 게시판을 갖춘 선교회 플랫폼입니다. Supabase RLS로 권한을 나눴습니다.</p>
       <ul class="tags"><li>Next.js 14</li><li>TypeScript</li><li>Supabase</li></ul>
-      <p class="meta"><a href="https://www.sunhansm.org">서비스</a></p>
+      <p class="card-links"><a class="link" href="https://www.sunhansm.org" target="_blank" rel="noopener">서비스 보기 ↗</a></p>
     </div>
 
     <div class="card">
@@ -213,7 +247,7 @@
       <p class="meta">2026.05 ~</p>
       <p>복수 체급 대진표 관리와 관리자 화면·전광판 동기화를 지원합니다.</p>
       <ul class="tags"><li>Vite</li><li>Vercel 서버리스</li><li>Neon(PostgreSQL)</li></ul>
-      <p class="meta"><a href="https://bracketdo.vercel.app">서비스</a></p>
+      <p class="card-links"><a class="link" href="https://bracketdo.vercel.app" target="_blank" rel="noopener">서비스 보기 ↗</a></p>
     </div>
 
     <div class="card">
@@ -229,7 +263,9 @@
       <ul class="tags"><li>Next.js 16</li><li>Prisma</li><li>PostgreSQL</li><li>Docker</li></ul>
     </div>
 
-    <h3>실험작</h3>
+    </div>
+    <h3 class="group">실험작</h3>
+    <div class="grid">
 
     <div class="card">
       <h3>batrace — 사용후 배터리 재생원료 이력관리 (MVP)</h3>
@@ -257,20 +293,21 @@
       <p>지도와 일정을 함께 보여 주고 오프라인에서도 열리는 여행 일정 PWA입니다. 캘린더(ICS) 내보내기를 지원합니다.</p>
       <ul class="tags"><li>HTML/JS</li><li>Leaflet</li><li>PWA</li></ul>
     </div>
+    </div>
   </section>
 
   <section id="credentials">
     <h2>자격 · 학력 · 수상 · 교육</h2>
-    <table>
+    <div class="table-wrap"><table>
       <tr><th>구분</th><th>내용</th><th>일자</th></tr>
       <tr><td>자격</td><td>정보처리기사 (한국산업인력공단)</td><td>2019.05</td></tr>
       <tr><td>자격</td><td>SQLD (한국데이터산업진흥원)</td><td>2024.09</td></tr>
       <tr><td>자격</td><td>ADsP 데이터분석 준전문가 (한국데이터산업진흥원)</td><td>2025.09</td></tr>
-      <tr><td>자격</td><td>자동차 운전면허</td><td>2013</td></tr>
+      <tr><td>자격</td><td>자동차 운전면허 1종 보통</td><td>2013</td></tr>
       <tr><td>학력</td><td>순천대학교 컴퓨터공학과 학사</td><td>2014.03 ~ 2020.02</td></tr>
       <tr><td>수상</td><td>전라남도 공공데이터 활용 아이디어 공모전 대상 (전라남도) — 도선·예선 최적 배정 시스템, 2021 데이터 플래그십 사업으로 이어짐</td><td>2020.09</td></tr>
       <tr><td>교육</td><td>블록체인 특화과정 교육강사양성과정 ((재)전남정보문화산업진흥원)</td><td>2021.11 ~ 2021.12</td></tr>
-    </table>
+    </table></div>
   </section>
 
   <section id="all-projects">
@@ -279,17 +316,17 @@
 
     <details>
       <summary>2026 (3건)</summary>
-      <table>
+      <div class="table-wrap"><table>
         <tr><th>사업명</th><th>발주처</th><th>기간</th></tr>
         <tr><td>순천문화재단 누리집 재구축 용역</td><td>(재)순천문화재단</td><td>2026.06 ~ 2026.07</td></tr>
         <tr><td>2026 순천문화예술지원시스템 유지보수 용역</td><td>(재)순천문화재단</td><td>2026.02 ~ 2026.12</td></tr>
         <tr><td>2026 순천문화재단 홈페이지 유지보수 용역</td><td>(재)순천문화재단</td><td>2026.01 ~ 2026.12</td></tr>
-      </table>
+      </table></div>
     </details>
 
     <details>
       <summary>2025 (7건)</summary>
-      <table>
+      <div class="table-wrap"><table>
         <tr><th>사업명</th><th>발주처</th><th>기간</th></tr>
         <tr><td>순천문화예술정보 다보여 기능 고도화 용역</td><td>(재)순천문화재단</td><td>2025.12 ~ 2026.03</td></tr>
         <tr><td>수와루 그룹웨어 개발</td><td>(주)수와루</td><td>2025.08 ~ 2025.11</td></tr>
@@ -298,12 +335,12 @@
         <tr><td>순천문화예술지원시스템 구축 및 유지보수</td><td>(재)순천문화재단</td><td>2025.02 ~ 2025.12</td></tr>
         <tr><td>순천문화재단 홈페이지 유지보수</td><td>(재)순천문화재단</td><td>2025.02 ~ 2025.12</td></tr>
         <tr><td>(재)순천문화재단 홈페이지 유지보수 및 순천문화예술정보 플랫폼 구축 용역</td><td>(재)순천문화재단</td><td>2025.02</td></tr>
-      </table>
+      </table></div>
     </details>
 
     <details>
       <summary>2024 (24건)</summary>
-      <table>
+      <div class="table-wrap"><table>
         <tr><th>사업명</th><th>발주처</th><th>기간</th></tr>
         <tr><td>데이터기반 지역기업 혁신성장 플랫폼 용량증설용 HDD 구매</td><td>(재)전남테크노파크</td><td>2024.12</td></tr>
         <tr><td>(재)전남테크노파크 스마트 과제관리시스템(PMS) 구축 용역</td><td>(재)전남테크노파크</td><td>2024.12 ~ 2025.10</td></tr>
@@ -329,12 +366,12 @@
         <tr><td>2024년 전남테크노파크 홈페이지 유지보수 용역</td><td>(재)전남테크노파크</td><td>2024.01 ~ 2024.12</td></tr>
         <tr><td>2023년 데이터기반 지역기업 혁신성장 플랫폼 유지보수 용역</td><td>(재)전남테크노파크</td><td>2024.01 ~ 2024.06</td></tr>
         <tr><td>교육용 클라우드 플랫폼 구축</td><td>순천대학교 산학협력단</td><td>2024.01 ~ 2024.02</td></tr>
-      </table>
+      </table></div>
     </details>
 
     <details>
       <summary>2023 (11건)</summary>
-      <table>
+      <div class="table-wrap"><table>
         <tr><th>사업명</th><th>발주처</th><th>기간</th></tr>
         <tr><td>순천시 문화건강센터 홈페이지 기능개선</td><td>순천시청</td><td>2023.12</td></tr>
         <tr><td>교육용 클라우드 플랫폼 구축</td><td>순천대학교 산학협력단</td><td>2023.10 ~ 2023.12</td></tr>
@@ -347,12 +384,12 @@
         <tr><td>순천시 청년정책 홈페이지 제작 용역</td><td>순천시청</td><td>2023.03 ~ 2023.04</td></tr>
         <tr><td>순천시 목재문화지원센터 홈페이지 구축 용역</td><td>순천시청</td><td>2023.03 ~ 2023.06</td></tr>
         <tr><td>티와이파우들러(주) 홈페이지 구축 용역</td><td>티와이파우들러 주식회사</td><td>2023.03</td></tr>
-      </table>
+      </table></div>
     </details>
 
     <details>
       <summary>2022 (9건)</summary>
-      <table>
+      <div class="table-wrap"><table>
         <tr><th>사업명</th><th>발주처</th><th>기간</th></tr>
         <tr><td>순천시 정원지원센터 홈페이지 구축 용역</td><td>순천시청</td><td>2022.11 ~ 2023.01</td></tr>
         <tr><td>2022년 데이터기반 지역기업 혁신성장 플랫폼 고도화 용역</td><td>(재)전남테크노파크</td><td>2022.10 ~ 2023.01</td></tr>
@@ -363,12 +400,12 @@
         <tr><td>제30회 전라남도 장애인 체육대회 홈페이지 구축용역</td><td>제30회 전라남도장애인체육대회 추진위원회</td><td>2022.02 ~ 2022.04</td></tr>
         <tr><td>제61회 전라남도체육대회 홈페이지 구축용역</td><td>제61회 전라남도체육대회 조직위원회</td><td>2022.01 ~ 2022.03</td></tr>
         <tr><td>여수지방해양수산청 정보시스템 통합 유지관리(2022)</td><td>(주)케이엠넷</td><td>2022.01 ~ 2022.05</td></tr>
-      </table>
+      </table></div>
     </details>
 
     <details>
       <summary>2021 (40건)</summary>
-      <table>
+      <div class="table-wrap"><table>
         <tr><th>사업명</th><th>발주처</th><th>기간</th></tr>
         <tr><td>2023순천만국제정원박람회 홈페이지 구축 용역</td><td>(재)순천만국제정원박람회조직위원회</td><td>2021.12 ~ 2022.05</td></tr>
         <tr><td>2022년 전남테크노파크 홈페이지 웹접근성 인증갱신</td><td>(재)전남테크노파크</td><td>2021.12</td></tr>
@@ -410,12 +447,12 @@
         <tr><td>여수지방해양수산청 정보시스템 통합 유지관리(2021)</td><td>여수지방해양수산청</td><td>2021.01 ~ 2021.07</td></tr>
         <tr><td>2021년 전남테크노파크 홈페이지 유지보수 용역</td><td>(재)전남테크노파크</td><td>2021.01 ~ 2021.07</td></tr>
         <tr><td>2021년 순천시 장난감도서관 프로그램 유지보수 용역</td><td>순천시청</td><td>2021.01 ~ 2021.08</td></tr>
-      </table>
+      </table></div>
     </details>
 
     <details>
       <summary>2020 (23건)</summary>
-      <table>
+      <div class="table-wrap"><table>
         <tr><th>사업명</th><th>발주처</th><th>기간</th></tr>
         <tr><td>전남 과학기술 및 R&amp;D 정보 플랫폼 구축 용역</td><td>(재)전남테크노파크</td><td>2020.11 ~ 2021.02</td></tr>
         <tr><td>국가(ZEUS) 및 지역(JEINET) 연구장비시스템 정보연계 용역</td><td>(재)전남테크노파크</td><td>2020.11</td></tr>
@@ -440,12 +477,12 @@
         <tr><td>2020년 전남테크노파크 홈페이지 유지보수 용역</td><td>전남테크노파크</td><td>2020.01 ~ 2020.04</td></tr>
         <tr><td>2020 전남TP 홈페이지 유지보수</td><td>(재)전남테크노파크</td><td>2020.01 ~ 2020.12</td></tr>
         <tr><td>지역SW서비스사업화지원사업_철강·항만산업 수출물류 효율 극대화를 위한 코일 적부계획 자동화 모델링 시스템 상용화</td><td>정보통신산업진흥원</td><td>2020.01 ~ 2021.07</td></tr>
-      </table>
+      </table></div>
     </details>
 
     <details>
       <summary>2019 (7건)</summary>
-      <table>
+      <div class="table-wrap"><table>
         <tr><th>사업명</th><th>발주처</th><th>기간</th></tr>
         <tr><td>데이터기반 지역기업 혁신성장 플랫폼 구축</td><td>(재)전남테크노파크</td><td>2019.12 ~ 2020.01</td></tr>
         <tr><td>전라남도 보조기기센터 홈페이지 구축</td><td>순천제일대학</td><td>2019.11 ~ 2020.01</td></tr>
@@ -454,10 +491,14 @@
         <tr><td>월등향매실영농조합법인 대표 쇼핑몰 구축 용역</td><td>월등향매실영농조합법인</td><td>2019.10 ~ 2019.11</td></tr>
         <tr><td>순천제일대학교 SJC 재활임상센터 페이지 구축</td><td>순천제일대학</td><td>2019.10 ~ 2020.01</td></tr>
         <tr><td>느리게걷기 홈페이지 구축</td><td>느리게 걷기</td><td>2019.10 ~ 2019.11</td></tr>
-      </table>
+      </table></div>
     </details>
   </section>
 
 </main>
+
+<footer class="site-footer">
+  <p>© 2026 선동현 · <a href="mailto:tjsehdgus1100@gmail.com">tjsehdgus1100@gmail.com</a></p>
+</footer>
 </body>
 </html>
